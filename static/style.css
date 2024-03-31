@@ -1,0 +1,141 @@
+/* Shared styles for both homepage.html and about.html */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Initial background color (lighter blue) */
+    animation: colorTransition 10s infinite alternate; /* Animation for color transition */
+    position: relative;
+}
+/*
+@keyframes colorTransition {
+    0% {
+        background-color: #000000;
+    }
+    100% {
+        background-color: #ffffff ;
+    }
+}
+*/
+.container {
+    max-width: 800px; /* Adjust container width as needed */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Container background color */
+    border-radius: 10px; /* Increased border radius for smoother edges */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    position: absolute; /* Position absolute */
+    left: 300px; /* Adjust this value to match the width of the sidebar */
+    right: 0; /* Stick to the right-hand side of the screen */
+}
+
+
+h2 {
+    text-align: center;
+    color: #333333; /* Text color */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    color: #666666; /* Label color */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for better input field size */
+    margin-bottom: 20px;
+    border: 1px solid #cccccc; /* Border color */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px; /* Increased padding for buttons */
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.about-section,
+.products-section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Box background color */
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+.about-section h3,
+.products-section h3 {
+    text-align: center;
+    color: #333333; /* Text color */
+    margin-bottom: 20px; /* Add a small margin below the heading */
+}
+
+.about-content,
+.products-content {
+    text-align: center;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    padding: 15px 25px; /* Increased padding for buttons */
+    background-color: #111;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none; /* Remove default underline */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar styling */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333; /* Darker background */
+    padding-top: 20px;
+    transition: width 0.5s; /* Smooth width transition */
+    z-index: 1000; /* Ensure the sidebar is above other content */
+    border-top-left-radius: 20px; /* Curved top-left corner */
+    border-bottom-left-radius: 20px; /* Curved bottom-left corner */
+}
+/* Style for the links in the sidebar */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px; /* Slightly smaller font size */
+    color: #fff; /* White text */
+    display: block;
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+/* Change the color of links when hovered */
+.sidebar a:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+/* Content area style */
+.content {
+    margin-left: 250px; /* Adjust this value to match the width of the sidebar */
+    padding: 20px;
+}
