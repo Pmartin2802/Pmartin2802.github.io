@@ -14,9 +14,9 @@ def waitlist():
 
 @app.route('/')
 def index():
-    return render_template('homepage.html')
+    return render_template('index.html')
 
-@app.route('/homepage')
+@app.route('/index')
 def homepage():
     return render_template('homepage.html')
 
